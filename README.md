@@ -1,25 +1,35 @@
-# 🤖 AI Research Assistant with LangChain + Groq + Streamlit
+🤖 AI Research Assistant with LangChain + Groq + Streamlit
+A conversational AI agent built with LangChain, powered by Groq's blazing-fast LLMs, and enhanced with real-time search tools like Wikipedia, ArXiv, and DuckDuckGo. The app retains chat history and provides contextual responses.
 
-A conversational AI agent built with [LangChain](https://www.langchain.com/), powered by [Groq's](https://groq.com/) blazing-fast LLMs, and enhanced with real-time search tools like Wikipedia, ArXiv, and DuckDuckGo. The app retains chat history and provides contextual responses.
+🚀 Features
+🧠 LLM Agent using LangChain
 
-## 🚀 Features
+🔍 Real-time web search via DuckDuckGo
 
-- 🧠 LLM Agent using LangChain
-- 🔍 Real-time web search with DuckDuckGo
-- 📚 Scientific paper search using ArXiv
-- 🌐 Wikipedia summarization
-- 🧵 Chat with message history
-- ⚡ Blazing-fast responses via Groq's Gemma2-9b-It model
-- 🎨 Simple UI using Streamlit
+📚 Scientific paper search using ArXiv
 
-## 📸 Preview
+🌐 Wikipedia summarization
 
-![screenshot](https://via.placeholder.com/700x300.png?text=Streamlit+AI+Agent+Chat)
+🧵 Chat with persistent message history
 
-## 🛠️ Getting Started
+⚡ Ultra-fast responses via Groq’s gemma-2-9b-it model
 
-### 1. Clone the Repository
+🎨 Clean and responsive UI built with Streamlit
 
-```bash
+🛠️ Getting Started
+1. Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/your-username/ai-agent-chatbot.git
 cd ai-agent-chatbot
+2. Install Requirements
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3. Run the App
+bash
+Copy
+Edit
+streamlit run app.py
