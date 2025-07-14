@@ -32,7 +32,7 @@ Before you begin, ensure you have the following installed:
 First, clone the repository to your local machine using Git:
 
 ```bash
-git clone (https://github.com/Sandeepkandula2004/Agent-for-web-search)]
+git clone https://github.com/Sandeepkandula2004/Agent-for-web-search
 cd "Agent-for-web-search"
 ```
 
