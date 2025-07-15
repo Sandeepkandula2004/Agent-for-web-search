@@ -42,7 +42,8 @@ for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
 # Handle new input
-if prompt := st.chat_input("Ask me anything (e.g., What is machine learning?)"):
+prompt = st.chat_input("Ask me anything (e.g., What is machine learning?)")
+if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
