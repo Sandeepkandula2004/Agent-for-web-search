@@ -1,13 +1,10 @@
 import streamlit as st
 from dotenv import load_dotenv
-import os
 
 from langchain.agents import initialize_agent, AgentType
-from langchain.tools import Tool
 from langchain_community.utilities import (
     ArxivAPIWrapper,
     WikipediaAPIWrapper,
-    DuckDuckGoSearchAPIWrapper,
 )
 from langchain_community.tools import (
     ArxivQueryRun,
@@ -17,8 +14,6 @@ from langchain_community.tools import (
 from langchain.callbacks.streamlit.streamlit_callback_handler import StreamlitCallbackHandler
 from langchain_groq import ChatGroq
 
-# Load environment variables
-load_dotenv()
 
 # --- Initialize Tools ---
 arxiv = ArxivQueryRun(api_wrapper=ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200))
